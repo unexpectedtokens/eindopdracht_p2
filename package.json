@@ -1,0 +1,14 @@
+{
+  "name": "eindopdracht_p2",
+  "version": "1.0.0",
+  "description": "Webshop for guitars/amps and accessories",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
