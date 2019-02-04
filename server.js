@@ -1,24 +1,25 @@
 const express = require("express");
+const hbs = require("hbs");
 const bp = require("body-parser");
 
 // const nodemailer = require("nodemailer");
-let urlEncodedParser = bp.urlencoded({ extended: false });
+let urlEncodedParser = bp.urlencoded({ extended: true });
 const app = express();
 var port = process.env.port || 4200;
-
+app.set("view-engine", "hbs");
+// hbs.registerPartials
 app.use(express.static(__dirname + "/public"));
-
 app.get("/", (req, res) => {
-  res.render("index.html");
+  res.render("frontpage.hbs");
+});
+app.get("/contact", (req, res) => {
+  res.render("contacted.hbs");
 });
 
-app.get("/contacted.html", (req, res) => {
-  res.render("contacted.html");
-});
-
-app.post("/contacted.html", urlEncodedParser, (req, res) => {
-  console.log(req.body);
-  // res.render("/contacted.html");
+app.post("/contact", urlEncodedParser, (req, res) => {
+  let email = req.body.email;
+  let message = req.body.message;
+  res.render("contacted.hbs", { email: email, message: message });
 });
 
 app.listen(port, () => {
