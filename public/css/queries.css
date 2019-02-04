@@ -16,4 +16,40 @@
   .social ul {
     text-align: center;
   }
+  .hamburger-container {
+    display: block;
+    float: right;
+  }
+  .hamburger {
+    position: relative;
+    display: block;
+    float: right;
+    color: #cecece;
+    font-size: 150%;
+    margin: 10px 20px;
+    cursor: pointer;
+  }
+  .hamburger-dropdown {
+    display: none;
+    position: absolute;
+    top: 46px;
+    right: 0px;
+    background-color: #fff;
+    min-width: 160px;
+    border: 1px solid rgb(180, 180, 180);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 20;
+  }
+  .hamburger-list li {
+    list-style: none;
+    margin-bottom: 4px;
+  }
+  .hamburger-list li a {
+    color: #555;
+    cursor: pointer;
+  }
+  .hamburger-list li a:hover {
+    color: #0984e3;
+  }
 }
