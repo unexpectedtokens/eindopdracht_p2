@@ -29,4 +29,11 @@ $(document).ready(function() {
     $(".contact-section").hide(100);
     $(".product-info").show(100);
   });
+  $(".submit-btn").click(() => {
+    $(".formsec").fadeIn(300);
+    $(".main-second").hide(200);
+    $(".main").hide(100);
+    $(".contact-section").hide(100);
+    $(".product-info").hide(100);
+  });
 });

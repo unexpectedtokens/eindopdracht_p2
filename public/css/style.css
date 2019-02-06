@@ -347,3 +347,41 @@ footer {
 .main-second {
   display: none;
 }
+/*contacted.hbs contacted section*/
+.contacted-ty {
+  padding: 100px 0 200px 0;
+}
+.contacted-row h3 {
+  font-size: 150%;
+  margin-bottom: 30px;
+}
+.contacted-row p {
+  font-size: 90%;
+  margin-bottom: 5px;
+}
+/* form*/
+.formsec {
+  display: none;
+  padding: 100px 20px;
+}
+.formsec .form {
+  width: 100%;
+}
+.form-left-col {
+  text-align: right;
+}
+.formsec-submit {
+  padding: 10px 16px;
+  background-color: #0984e3;
+  border-radius: 15px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.formed {
+  padding: 200px 0 100px 0;
+}
+.formed h3,
+.formed h4 {
+  margin-left: 15%;
+  margin-bottom: 25px;
+}

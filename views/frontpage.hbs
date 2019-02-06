@@ -100,6 +100,49 @@
       </div>
     </div>
   </section>
+  <section class="formsec">
+    <div class="row">
+      <div class="col span-2-of-2">
+        <h3>You're almost finished</h3>
+        <h4>Just fill out this form to verify your order</h4>
+      </div>
+    </div>
+    <form class="form" action="/formed" method="POST">
+      <div class="row">
+        <div class="col span-1-of-3 form-left-col"><label>Name</label></div>
+        <div class="col span-2-of-3 form-right-col"><input required type="text" name="name" id="name"></div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3 form-left-col"><label>Email</label></div>
+        <div class="col span-2-of-3 form-right-col">
+          <input type="text" name="email" id="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3 form-left-col"><label>Phone</label></div>
+        <div class="col span-2-of-3 form-right-col">
+          <input type="text" name="phone" id="phone" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3 form-left-col"><label>Address</label></div>
+        <div class="col span-2-of-3 form-right-col">
+          <input type="text" name="address" id="address" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3 form-left-col"><label>Do you want your inbox to be spammed with useless ads?</label></div>
+        <div class="col span-2-of-3 form-right-col">
+          Yes, please<input type="radio" name="ads" id="ads" value="yes" checked>
+          No<input type="radio" name="ads" id="ads" value="no">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col span-1-of-3"></div>
+        <div class="col span-2-of-3"> <input class="formsec-submit" type="submit"></div>
+      </div>
+    </form>
+  </section>
   <section class="main">
     <div class="row guarantees">
       <ul>
