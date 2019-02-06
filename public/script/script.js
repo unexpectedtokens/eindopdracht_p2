@@ -36,4 +36,13 @@ $(document).ready(function() {
     $(".contact-section").hide(100);
     $(".product-info").hide(100);
   });
+  $(".smallpic1").mouseover(function() {
+    $(".big-pic").css("background-image", "url(media/voxamp1.jpeg)");
+  });
+  $(".smallpic2").mouseover(function() {
+    $(".big-pic").css("background-image", "url(media/voxamp2.jpeg)");
+  });
+  $(".smallpic3").mouseover(function() {
+    $(".big-pic").css("background-image", "url(media/voxampback.jpeg)");
+  });
 });
