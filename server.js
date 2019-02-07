@@ -4,7 +4,7 @@ const bp = require("body-parser");
 const nodemailer = require("nodemailer");
 let urlEncodedParser = bp.urlencoded({ extended: true });
 const app = express();
-var port = 4200;
+var port = process.env.PORT;
 app.set("view-engine", "hbs");
 app.use(express.static(__dirname + "/public"));
 app.get("/", (req, res) => {
