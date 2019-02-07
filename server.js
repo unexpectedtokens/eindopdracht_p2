@@ -52,5 +52,5 @@ app.post("/formed", urlEncodedParser, (req, res) => {
   res.render("formed.hbs", { name, email, phone, address, ads });
 });
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Server running on port:${port}`);
 });
